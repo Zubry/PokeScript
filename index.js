@@ -38,26 +38,4 @@ const PokeScript = (function(){
   };
 })();
 
-const Promise = require('bluebird');
-const fs = require('fs');
-
-PokeScript.get('type', '2')
-  .then(function(type){
-    return PokeScript.Type(type);
-  })
-  .then(function(Fighting){
-    return Promise.all(Fighting.ineffective());
-  })
-  .then(function(ineffectives){
-    return ineffectives.map(function(type){
-      return {
-        'name': type.name(),
-        'weaknesses': type.weakness_primitive()
-      };
-    });
-  })
-  .then(function(data){
-    console.log(data);
-  });
-
 module.exports = PokeScript;
