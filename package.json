@@ -1,0 +1,30 @@
+{
+  "name": "pokescript",
+  "version": "1.0.0",
+  "description": "An API wrapper for Pokeapi",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^3.1.1",
+    "request-promise": "^1.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zubry/PokeScript.git"
+  },
+  "keywords": [
+    "pokemon",
+    "api",
+    "wrapper",
+    "zubry"
+  ],
+  "author": "Zubry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zubry/PokeScript/issues"
+  },
+  "homepage": "https://github.com/Zubry/PokeScript#readme"
+}
